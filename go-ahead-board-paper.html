@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bhargava Raju Dommaraju — Director of Group Finance Operations &amp; Transformation</title>
+<style>
+  :root{
+    --navy:#1F3864;
+    --navy-deep:#152744;
+    --gold:#C9A800;
+    --paper:#FFFFFF;
+    --tint:#F5F6F8;
+    --ink:#1B1F27;
+    --ink-soft:#616A7B;
+    --rule:#DCDFE5;
+    --rule-strong:#9AA2B1;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--tint);
+    color:var(--ink);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    line-height:1.42;
+    font-variant-numeric:tabular-nums;
+  }
+
+  .paper{
+    max-width:900px;
+    margin:24px auto;
+    background:var(--paper);
+    border:1px solid var(--rule);
+    padding:34px 40px 30px;
+  }
+
+  /* ---------- header ---------- */
+
+  .head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:24px;
+    padding-bottom:12px;
+    border-bottom:2px solid var(--navy);
+  }
+
+  .head h1{
+    margin:0;
+    font-size:23px;
+    line-height:1.15;
+    color:var(--navy);
+    letter-spacing:-.01em;
+  }
+
+  .head .role{
+    margin:5px 0 0;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+
+  .head .role b{color:var(--navy-deep);}
+
+  .stamp{
+    text-align:right;
+    font-size:10px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    line-height:1.7;
+    white-space:nowrap;
+  }
+
+  .stamp b{color:var(--navy);font-weight:700;}
+
+  /* ---------- meta strip ---------- */
+
+  .meta{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-bottom:1px solid var(--rule);
+  }
+
+  .meta div{padding:11px 16px 11px 0;}
+  .meta div + div{border-left:1px solid var(--rule);padding-left:16px;}
+
+  .meta dt{
+    font-size:9.5px;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    font-weight:700;
+    margin:0 0 3px;
+  }
+
+  .meta dd{margin:0;font-size:13px;color:var(--navy-deep);font-weight:700;}
+
+  /* ---------- summary ---------- */
+
+  h2{
+    font-size:10px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--navy);
+    font-weight:700;
+    margin:22px 0 8px;
+  }
+
+  .summary{
+    margin:0;
+    font-size:13.5px;
+    line-height:1.5;
+    color:var(--ink);
+    max-width:64em;
+  }
+
+  .summary b{color:var(--navy-deep);}
+
+  /* ---------- figures ---------- */
+
+  .figs{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-top:1px solid var(--rule-strong);
+    border-bottom:3px double var(--rule-strong);
+    margin-top:14px;
+  }
+
+  .figs div{padding:12px 14px 11px 0;}
+  .figs div + div{border-left:1px solid var(--rule);padding-left:14px;}
+
+  .fig{
+    display:block;
+    font-size:22px;
+    font-weight:700;
+    color:var(--navy);
+    line-height:1;
+    letter-spacing:-.01em;
+  }
+  .fig .u{font-size:.55em;color:var(--gold);}
+
+  .cap{
+    display:block;
+    margin-top:5px;
+    font-size:10.5px;
+    line-height:1.3;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- assessment table ---------- */
+
+  table{width:100%;border-collapse:collapse;}
+
+  thead th{
+    font-size:9.5px;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    font-weight:700;
+    text-align:left;
+    padding:0 0 6px;
+    border-bottom:1px solid var(--rule-strong);
+  }
+
+  th.c1{width:31%;padding-right:18px;}
+  th.c3{width:78px;text-align:right;}
+
+  tbody td{
+    vertical-align:top;
+    padding:9px 0;
+    border-bottom:1px solid var(--rule);
+    font-size:12.5px;
+    line-height:1.42;
+  }
+
+  tbody td.c1{
+    padding-right:18px;
+    color:var(--navy-deep);
+    font-weight:700;
+  }
+
+  tbody td.c3{
+    text-align:right;
+    white-space:nowrap;
+    font-size:9.5px;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--navy);
+    padding-left:10px;
+  }
+
+  td.c3 .dot{
+    display:inline-block;
+    width:7px;height:7px;
+    border-radius:50%;
+    background:var(--navy);
+    margin-left:6px;
+    vertical-align:baseline;
+  }
+  td.c3.partial{color:var(--gold);}
+  td.c3.partial .dot{background:var(--gold);}
+
+  tbody tr:last-child td{border-bottom:1px solid var(--rule-strong);}
+
+  .co{color:var(--navy);font-weight:700;}
+  .num{font-weight:700;box-shadow:inset 0 -.4em 0 rgba(201,168,0,.24);}
+
+  .legend{
+    margin:7px 0 0;
+    font-size:10px;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- matters ---------- */
+
+  .matters{
+    margin:0;
+    padding:14px 18px;
+    background:var(--tint);
+    border-left:3px solid var(--gold);
+  }
+
+  .matters p{margin:0 0 8px;font-size:12.5px;line-height:1.45;}
+  .matters p:last-child{margin-bottom:0;}
+  .matters b{color:var(--navy-deep);}
+
+  /* ---------- systems ---------- */
+
+  .systems{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-top:1px solid var(--rule-strong);
+    border-bottom:1px solid var(--rule);
+    margin:0;
+  }
+  .systems div{padding:11px 14px 11px 0;}
+  .systems div + div{border-left:1px solid var(--rule);padding-left:14px;}
+  .systems dt{
+    font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--gold);font-weight:700;margin:0 0 4px;
+  }
+  .systems dd{margin:0;font-size:11.5px;line-height:1.4;color:var(--navy-deep);}
+
+  /* ---------- terms + footer ---------- */
+
+  .terms{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:var(--navy);
+    color:#fff;
+    margin:22px 0 0;
+  }
+  .terms div{padding:13px 16px;}
+  .terms div + div{border-left:1px solid rgba(255,255,255,.18);}
+  .terms dt{
+    font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
+    color:var(--gold);font-weight:700;margin:0 0 4px;
+  }
+  .terms dd{margin:0;font-size:12.5px;line-height:1.35;}
+
+  footer{
+    margin-top:14px;
+    padding-top:11px;
+    border-top:1px solid var(--rule);
+    font-size:11.5px;
+    color:var(--ink-soft);
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 20px;
+    align-items:baseline;
+  }
+  footer .who{color:var(--navy);font-weight:700;}
+  footer a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--rule-strong);}
+  footer a:hover{border-bottom-color:var(--gold);}
+  footer a:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+
+  /* ---------- mobile ---------- */
+
+  @media (max-width:760px){
+    body{font-size:15px;}
+    .paper{margin:0;border:0;padding:24px 20px 26px;}
+    .head{flex-direction:column;gap:10px;}
+    .stamp{text-align:left;}
+    .meta,.figs,.systems,.terms{grid-template-columns:repeat(2,1fr);}
+    .meta div,.figs div,.systems div{padding-right:12px;}
+    .meta div:nth-child(odd),.figs div:nth-child(odd),.systems div:nth-child(odd){border-left:0;padding-left:0;}
+    .meta div:nth-child(even),.figs div:nth-child(even),.systems div:nth-child(even){border-left:1px solid var(--rule);padding-left:14px;}
+    .meta div:nth-child(-n+2),.figs div:nth-child(-n+2),.systems div:nth-child(-n+2){border-bottom:1px solid var(--rule);}
+    .terms div:nth-child(odd){border-left:0;}
+    .terms div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.18);}
+
+    thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+    tbody td{display:block;border-bottom:0;padding:0;font-size:13.5px;}
+    tbody td.c1{padding:12px 0 5px;}
+    tbody td.c3{text-align:left;padding:6px 0 12px;border-bottom:1px solid var(--rule);}
+    td.c3 .dot{margin:0 6px 0 0;}
+  }
+
+  @media print{
+    @page{size:A4;margin:12mm;}
+    body{background:#fff;font-size:9pt;line-height:1.32;}
+    .paper{margin:0;border:0;padding:0;max-width:none;}
+    .terms{background:#fff;color:var(--ink);border:1px solid var(--rule-strong);}
+    .terms dt{color:var(--navy);}
+    .terms div + div{border-left:1px solid var(--rule);}
+    tbody tr{break-inside:avoid;}
+    section{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <div class="head">
+    <div>
+      <h1>Bhargava Raju Dommaraju</h1>
+      <p class="role">Candidate assessment against brief — <b>Director of Group Finance Operations &amp; Transformation</b>, The Go-Ahead Group</p>
+    </div>
+    <div class="stamp">
+      <b>Prepared</b> Aug 2026<br>
+      <b>Status</b> Available immediately<br>
+      <b>Ref</b> GAG-GFOT
+    </div>
+  </div>
+
+  <dl class="meta">
+    <div><dt>Experience</dt><dd>20 yrs · 13 interim</dd></div>
+    <div><dt>Qualifications</dt><dd>CA (ICAI) · CIMA · PRINCE2</dd></div>
+    <div><dt>Sector depth</dt><dd>Listed · PE-backed · FCA-regulated</dd></div>
+    <div><dt>Criteria met</dt><dd>9 of 11 direct</dd></div>
+  </dl>
+
+  <h2>Position</h2>
+  <p class="summary">Twenty years in finance, thirteen as an interim, spent stabilising business as usual and then rebuilding the operating model underneath it. Controllership and transformation leadership at <b>Walgreens Boots Alliance</b>, <b>GSK</b>, <b>Commercial Metals Company</b> and <b>Pepper Money</b> — carve-outs, shared-service transitions, ERP and EPM lifecycles, and most recently an AI-enabled close. Nine of the eleven criteria map directly; two are set out under Matters for discussion.</p>
+
+  <div class="figs">
+    <div><span class="fig">£1<span class="u">bn</span></span><span class="cap">WBA group cost optimisation programme, 2019–24 — transformation team member</span></div>
+    <div><span class="fig">50<span class="u">%</span></span><span class="cap">Headcount reduction, WBA R2R shared-service transition</span></div>
+    <div><span class="fig">60<span class="u">%</span></span><span class="cap">Faster planning cycle, TM1 / Planning Analytics at WBA</span></div>
+    <div><span class="fig">120<span class="u">hrs</span></span><span class="cap">Manual effort removed monthly, AI agents at Pepper Money</span></div>
+  </div>
+
+  <h2>Assessment against the brief</h2>
+  <table>
+    <thead>
+      <tr><th class="c1" scope="col">Criterion</th><th scope="col">Evidence</th><th class="c3" scope="col">Fit</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="c1">Senior leader over large finance functions; large-scale transformation</td>
+        <td>FC / Head of Finance, CDF International Division, <span class="co">WBA</span>, five years. Member of the Group finance transformation team on the <span class="num">£1bn</span> cost optimisation programme.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Complex, multi-entity or regulated environments</td>
+        <td>FCA-regulated lending at <span class="co">Pepper Money</span> and <span class="co">Paratus AMC</span> (parent plus <span class="num">20</span> subsidiaries). R2R for <span class="co">GSK</span> corporate entities carrying a <span class="num">£10bn</span> balance sheet.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Ownership of ERP / EPM optimisation and continuous improvement</td>
+        <td>Full <span class="co">TM1 / Planning Analytics</span> lifecycle at WBA — As-Is through design, build, stabilisation and super-user ownership; planning cycle down <span class="num">60%</span>. Key stakeholder on SAP ECC to S/4HANA preparation, all modules.</td>
+        <td class="c3 partial">Partial<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Shared Services Centre / centralised finance operations</td>
+        <td>Led WBA international controllership into an outsourced SSC end to end — org design, SOPs, KPIs, governance, stabilisation — <span class="num">50%</span> headcount reduction with control quality improved. Transitioned and stabilised R2R into <span class="co">GSK</span> Core Business Services, managing the Genpact offshore team.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Financial control frameworks, group reporting, governance</td>
+        <td>SOX design, testing and documentation at <span class="co">GSK</span>; risk control matrix and audit strategy built from scratch at <span class="co">CMC</span>; statutory accounts under IFRS, UK and US GAAP. <span class="num">100%</span> intercompany reconciliation accuracy achieved at <span class="co">Pepper Money</span>.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Leading large multi-disciplinary teams through change</td>
+        <td>Onshore and offshore teams at <span class="co">WBA</span>, <span class="co">GSK</span> and <span class="co">CMC</span>, including Genpact through the CBS transition. Thirteen interim years means arriving mid-change is the normal starting condition.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Engagement at Executive and Board / Audit Committee level</td>
+        <td>Signing authority on divisional investment papers under WBA delegation of authority; partnered the C-suite on the consolidated reporting suite; ran internal and external audit across three groups without missing a deadline.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Qualified accountant</td>
+        <td>Chartered Accountant (ICAI, <span class="num">Rank Holder</span>, first-time passes) and CIMA — managerial and strategic papers at first attempt. PRINCE2 Practitioner.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Automation and digital finance <span style="font-weight:400;color:var(--ink-soft)">(desirable)</span></td>
+        <td>Copilot Studio agents with Power Automate across P2P, R2R, reconciliations and close at <span class="co">Pepper Money</span> — <span class="num">120 hrs</span> a month removed. Concur and Technology One re-engineered, <span class="num">60%</span> faster processing; <span class="num">65%</span> of reconciliations moved pre-month-end.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Standardised operating models across decentralised businesses <span style="font-weight:400;color:var(--ink-soft)">(desirable)</span></td>
+        <td>Standardised controllership across WBA's decentralised international entities during the carve-out and redesigned the cost allocation model behind it. Built the Target Operating Model at <span class="co">Pepper Money</span> that ERP replacement is delivered against.</td>
+        <td class="c3">Direct<span class="dot"></span></td>
+      </tr>
+      <tr>
+        <td class="c1">Finance capability frameworks and leadership pipelines <span style="font-weight:400;color:var(--ink-soft)">(desirable)</span></td>
+        <td>Process and control training delivered to teams at <span class="co">WBA</span>; super-user capability built and handed over on TM1.</td>
+        <td class="c3 partial">Partial<span class="dot"></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="legend">Direct — evidenced by delivery in role. Partial — adjacent evidence, set out below.</p>
+
+  <h2>Matters for discussion</h2>
+  <div class="matters">
+    <p><b>Oracle Fusion and Oracle EPM.</b> Go-Ahead's estate is Oracle. My Oracle Financials experience is at CMC, not Fusion. The EPM lifecycle experience transfers directly — TM1 taken from As-Is to super-user ownership, SAP BPC at GSK, Vena at Pepper Money — but Fusion itself would be new.</p>
+    <p><b>Capability frameworks and succession.</b> My record is capability building inside programmes rather than owning a formal framework or leadership pipeline. Worth testing at interview rather than taking on trust.</p>
+  </div>
+
+  <h2>Systems</h2>
+  <dl class="systems">
+    <div><dt>Built</dt><dd>Copilot Studio AI agents · Power Automate flows</dd></div>
+    <div><dt>Implemented</dt><dd>SAP S/4HANA &amp; ECC, BPC · Oracle · MS Dynamics · TM1 / Planning Analytics</dd></div>
+    <div><dt>Super user</dt><dd>Concur · Technology One · Cognos · Vena · FloQast · Hyperion</dd></div>
+    <div><dt>Reporting</dt><dd>Power BI · SQL · Trintech · BlackLine</dd></div>
+  </dl>
+
+  <dl class="terms">
+    <div><dt>Availability</dt><dd>Immediate</dd></div>
+    <div><dt>Location</dt><dd>Open to relocate · no travel constraints</dd></div>
+    <div><dt>Working pattern</dt><dd>Remote or hybrid preferred</dd></div>
+    <div><dt>References</dt><dd>Written, from previous line managers, on request</dd></div>
+  </dl>
+
+  <footer>
+    <span class="who">Bhargava Raju Dommaraju</span>
+    <span>M: +44 7438 371237</span>
+    <a href="mailto:bhargava.raju@outlook.com">bhargava.raju@outlook.com</a>
+    <a href="https://www.linkedin.com/in/bhargava-raju-dommaraju" target="_blank" rel="noopener">linkedin.com/in/bhargava-raju-dommaraju</a>
+  </footer>
+
+</div>
+</body>
+</html>
